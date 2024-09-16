@@ -1,0 +1,11 @@
+make changes to your files 
+save it
+git add <filename> /. - stage the file name
+git commit -m "message"- commit the filegit push - upload the commits
+
+
+
+
+
+pwd: to see where you are
+
