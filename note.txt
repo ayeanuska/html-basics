@@ -1,3 +1,5 @@
+git is a version control.
+- how to 
 make changes to your files 
 save it
 git add <filename> /. - stage the file name
@@ -5,7 +7,40 @@ git commit -m "message"- commit the filegit push - upload the commits
 
 
 
-
-
 pwd: to see where you are
+git status ( to track changes)
+git add . (. means current folder)
+git add filename
+
+git status
+git commit -m "message"
+git push -
+
+git log ( commit history)
+commit has id are unique id to go to particular check point
+
+copy the commit d to reset
+q to exit 
+
+git reset -- hard (and paste)
+git pull ( to revert)
+
+
+git fetch 
+git statusgit pull
+
+ 
+
+
+
+
+///form methods////
+- get   ( send to  input field name to url )-  query string
+- post  
+
+
+
+
+
+
 
