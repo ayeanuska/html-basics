@@ -1,0 +1,36 @@
+/* styling using sizing and flex box */
+
+/*  FLEX BOX NOTE:
+The flex container is the parent element that holds flex items. 
+You define a flex container using 
+display: flex */
+
+/* A flexbox item is a direct child of a flex container. 
+These items can be manipulated and arranged using various flexbox properties. */
+
+.blogHeading {
+  font-size: 60px;
+  background-color: burlywood;
+  text-align: center;
+}
+
+.parentContainer {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.article {
+  background-color: rgb(156, 156, 232);
+  border-radius: 22px;
+  width: 400px;
+  font-size: 30px;
+
+  h2 {
+    text-align: center;
+    background-color: lightgray;
+    margin-top: 0%;
+  }
+}
