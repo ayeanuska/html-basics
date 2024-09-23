@@ -45,6 +45,11 @@ git statusgit pull
 
 
 
+//git deploy / publish website
+choose your repo, go to settings then go to passes select the branch wait and refresh.
+
+
+
 
 methods :
  
