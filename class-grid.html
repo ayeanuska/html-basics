@@ -9,6 +9,12 @@
         display: grid;
         grid-template-columns: 100px 200px 300px 400px;
         grid-template-areas: 100px 200px 300px 300px 400px;
+        /* 
+        grid-template-columns: 100px;
+        grid-template-areas: 100px repeat 3 (400px); */
+
+        /* grid-template-columns: 1fr 1fr 2fr 2fr;   [fr-  equal size w respect to gridsize/height/width]
+        grid-template-areas: repeat(4 1fr);     [gives 4 equal size grid] */
 
         width: 1030px;
         height: 500px;
@@ -21,6 +27,7 @@
         grid-column-start: 1;
         grid-column-end: 3;
         background: blue;
+        /* grid-column: span 2 (spans child1 to 2 column ); */
 
         width: auto;
         height: auto;
