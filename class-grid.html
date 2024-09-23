@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid template</title>
+    <style>
+      .grid-parent {
+        display: grid;
+        grid-template-columns: 100px 200px 300px 400px;
+        grid-template-areas: 100px 200px 300px 300px 400px;
+
+        width: 1030px;
+        height: 500px;
+        column-gap: 10px;
+        row-gap: 10px;
+        background: red;
+      }
+
+      .child1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background: blue;
+
+        width: auto;
+        height: auto;
+      }
+      .child2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background: pink;
+
+        width: auto;
+        height: auto;
+      }
+
+      .child3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background: rgb(70, 64, 65);
+
+        width: auto;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-parent">
+      <div class="child1">Child1</div>
+      <div class="child2">child2</div>
+      <div class="child3">child3</div>
+    </div>
+  </body>
+</html>
