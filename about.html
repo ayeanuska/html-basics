@@ -4,11 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
+    <style>
+      .grid-parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 1fr 100px;
+        height: 100vh;
+        gap: 50px;
+        column-gap: 30px;
+        row-gap: 20px;
+        grid-template-areas:
+          "header header header"
+          "main main  aside"
+          "footer footer footer";
+      }
+
+      .navbar {
+        height: 200px;
+      }
+
+      .navbar > ul {
+        background: skyblue;
+        height: auto;
+        display: flex;
+        margin-top: 0%;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .child1 {
+        grid-area: header;
+        background-color: bisque;
+      }
+
+      .child2 {
+        grid-area: main;
+        background: pink;
+      }
+
+      .child3 {
+        grid-area: footer;
+        background: skyblue;
+      }
+
+      .child4 {
+        grid-area: aside;
+        background: bisque;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>hi, welcoome to my digital diary</h1>
-    <p>
-      I come here to share and update my skills and experience with you guys.
-    </p>
+    <section class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </section>
+    <section class="grid-parent">
+      <div class="child1">My Digital Diary</div>
+      <div class="child2">main1</div>
+      <div class="child3">footer</div>
+      <div class="child4">aside</div>
+    </section>
   </body>
 </html>
