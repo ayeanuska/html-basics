@@ -10,7 +10,9 @@ git push - upload the commits
 
 
 git branch
-git chckout -b branch-latest
+git checkout -b branch-latest ( -b is to to create a new, checkout branchname to go inside it)
+
+
 git branch -D new-branch ( delete the branch new-branch)
 git checkout main 
 git switch branch-latest ( to switch from one braanch to another)
