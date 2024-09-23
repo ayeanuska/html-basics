@@ -1,11 +1,21 @@
 git is a version control.
-- how to 
+- git commands
+
+
 make changes to your files 
 save it
 git add <filename> /. - stage the file name
 git commit -m "message"- commit the file
 git push - upload the commits
 
+
+git branch
+git chckout -b branch-latest
+git branch -D new-branch ( delete the branch new-branch)
+git checkout main 
+git switch branch-latest ( to switch from one braanch to another)
+git merge main ( merge main and branch -latest)
+git log (to check history, to exit log {Q})
 
 
 pwd: to see where you are
