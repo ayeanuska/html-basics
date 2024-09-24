@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aniamtiom</title>
+
+    <style>
+      .universe {
+        background: grey;
+        height: 100vh;
+        display: flex;
+      }
+
+      .circle1 {
+        background-color: aliceblue;
+        border-radius: 50%;
+        height: 600px;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+
+        animation: circularmotion 5s linear infinite;
+      }
+      @keyframes circularmotion {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .circle2 {
+        background-color: rgb(55, 16, 199);
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        transform: translatey(100px);
+      }
+
+      .circle3 {
+        background-color: rgb(199, 34, 16);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        transform: translatey(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="universe">
+      <div class="circle1">
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+      </div>
+    </div>
+  </body>
+</html>
