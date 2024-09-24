@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar system animation</title>
+    <style>
+      :root {
+        --planet-size: 30px;
+        --orbit-size: 50px;
+        --revolution-speed: 2s;
+      }
+
+      .solarsystem {
+        background: wheat;
+        background-image: url("./assets/universe.jpg");
+        background-size: cover;
+        background-position: center;
+
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .planet {
+        border-radius: 50%;
+        position: absolute;
+      }
+      .sun {
+        --planet-size: 40px;
+        --revolution-speed: 0s;
+        --orbit-size: 60px;
+
+        background: yellow;
+        width: var(--planet-size);
+        height: var(--planet-size);
+        box-shadow: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mercury {
+        --planet-size: 20px;
+        --revolution-speed: 1s;
+        --orbit-size: 60px;
+
+        background: orangered;
+        width: var(--planet-size);
+        height: var(--planet-size);
+        animation: rotation var(--revolution-speed) linear infinite;
+      }
+
+      .venus {
+        --planet-size: 70px;
+        --revolution-speed: 2s;
+        --orbit-size: 150px;
+
+        background: orange;
+        width: var(--planet-size);
+        height: var(--planet-size);
+        animation: rotation var(--revolution-speed) linear infinite;
+      }
+
+      .earth {
+        --planet-size: 80px;
+        --revolution-speed: 5s;
+        --orbit-size: 300px;
+
+        background: blue;
+        width: var(--planet-size);
+        height: var(--planet-size);
+        animation: rotation var(--revolution-speed) linear infinite;
+      }
+      .mars {
+        --planet-size: 100px;
+        --revolution-speed: 3s;
+        --orbit-size: 400px;
+
+        background: rgb(28, 22, 22);
+        width: var(--planet-size);
+        height: var(--planet-size);
+        animation: rotation var(--revolution-speed) linear infinite;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg) translate(var(--orbit-size));
+        }
+        to {
+          transform: rotate(360deg) translate(var(--orbit-size));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="solarsystem">
+      <div class="sun planet"></div>
+      <div class="mercury planet"></div>
+      <div class="venus planet"></div>
+      <div class="earth planet"></div>
+      <div class="mars planet"></div>
+    </div>
+  </body>
+</html>
